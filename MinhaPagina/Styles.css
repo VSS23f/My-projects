@@ -1,0 +1,89 @@
+:root {
+    --bg: #f0f0f0;
+    --texto: #111;
+    --borda: #e5e7eb;
+    --caixa: #f8fafc;
+    --acao: #2563eb;
+}
+[data-tema="escuro"] {
+    --bg: #111;
+    --texto: #f0f0f0;
+    --borda: #374151;
+    --caixa: #1f2937;
+    --acao: #3b82f6;
+}
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--texto);
+}
+.imagem-autoajustavel {
+    width: 80%;
+    height: auto;
+    display: block;
+}
+.container img {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #374151;
+}
+.topo {
+    border-bottom: 2px solid var(--borda);
+}
+
+.topo .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    margin: 2;
+    line-height: 10 ;
+}
+
+h1 {
+    margin: .2rem 0;
+    font-size: 2.0rem;
+    justify-content: flex-start;
+    line-height: 2.5;
+    padding: 50px;
+}
+
+    p {
+    padding: 50px;
+
+    }
+
+
+.projetos {
+    list-style: none;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    border-spacing: 20px;
+    line-height: 2.5;
+}
+
+
+
+.rodapePagina {
+    margin-top: auto;
+    border-top: 1px solid var(--borda);
+    align-items: right;
+    text-align: right;
+    
+   
+}
